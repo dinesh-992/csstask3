@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link rel="icon" href="./images/logo.png" >
+<style>
+    *{
+        background-color: bisque;
+    }   
+#form{
+    border-radius: 20%;
+}
+#field{
+    border-color: black;
+    border-radius: 20px;
+    border-style:double;
+    border-spacing:7em;
+border-width: 0.5em;
+}
+</style>
+
+</head>
+<body>
+<form action="./success.html" method="post">
+<fieldset id="field">
+    <legend>
+        <b>Enter your  Details</b>
+    </legend>
+    <label for="Name"> Movie Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" pattern="[a-zA-Z\d@!#$]+" required autofocus autocomplete="off" title="Please enter movie name"><br>
+    <label for="date">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+
+    <input type="date"required autofocus autocomplete="off"><br>
+    <label for="show">Show preference&nbsp;</label>
+    <select  name="show" id="show">
+        <option value="">Select</option>
+        <option value="1">Morning Show</option>
+        <option value="2">Matinee Show</option>
+        <option value="3">First Show</option>
+        <option value="4">Second Show</option>
+ </select>
+    <br>
+    <label for="quantity">Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" required autofocus autocomplete="off" dpattern="[\d]" title="enter only number"><br>
+    <label for="phone">Phone number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="number" pattern="\+91[6-9]\d{9}"title="enter valid number" required> <br>
+    <label for="payment">Mode of payment</label>
+    <select  name="payment" id="payment" required>
+        <option value="">Select online mode of payment</option>
+        <option value="1">Gpay</option>
+        <option value="2">Phone pe</option>
+        <option value="3">Paytm</option>
+        
+ </select>
+</fieldset>
+<br>
+<center>
+<input type="submit" value="Book tickets">
+</center>
+</form>
+</body>
+</html>
